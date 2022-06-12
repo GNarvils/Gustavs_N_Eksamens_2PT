@@ -150,7 +150,7 @@ public class Tests {
     	case "1" : atbilde1(); break;
     	case "2" : atbilde2(); break;
     	case "3" : atbilde3(); break;
-    	case "4" : break;
+    	case "4" : atbilde4(); break;
     	case "5" : break;
     	case "6" : break;
     	case "7" : break;
@@ -222,6 +222,28 @@ public class Tests {
                 		+ "\n 4. Int"
     	        		+ "\nJūs atbildējot uz šo jautājumu nepareizi!"
     	        		+ "\nJo Long un Int tipa mainīgos var tikaim rakstīt veselus skaitļus!"
+    	        		+ "\nPunkti 0 / 1");
+     		       rezultats();
+        	}
+    }
+        public static void atbilde4() {
+        	if(pareizi4 == true) {
+        		JOptionPane.showMessageDialog(null,"4. Jautājums\n Kuri no šīm mainīgiem ir definēti pareizi?"
+                		+ "\n 1. double skaitlis; + "
+                		+ "\n 2. float 3skaitlis; " 
+                		+ "\n 3. int skaitlis-15; "
+                		+ "\n 4. char burts; + "
+                		+ "\nJūs atbildējot uz šo jautājumu pareizi!"
+                		+ "\nPunkti: 1 / 1");
+        		   rezultats();
+        	}else {
+        		JOptionPane.showMessageDialog(null,"4. Jautājums\n Kuri no šīm mainīgiem ir definēti pareizi?"
+                		+ "\n 1. double skaitlis; + "
+                		+ "\n 2. float 3skaitlis; " 
+                		+ "\n 3. int skaitlis-15; "
+                		+ "\n 4. char burts; + "
+    	        		+ "\nJūs atbildējot uz šo jautājumu nepareizi!"
+    	        		+ "\nJo kad definējot mainīgo nevar rakstīt sākumā ciparu un arī nevar rakstīt - zimi!"
     	        		+ "\nPunkti 0 / 1");
      		       rezultats();
         	}
