@@ -153,7 +153,7 @@ public class Tests {
     	case "4" : atbilde4(); break;
     	case "5" : atbilde5(); break;
     	case "6" : atbilde6(); break;
-    	case "7" : break;
+    	case "7" : atbilde7(); break;
     	case "8" : break;
     	case "9" : break;
     	case "10" : break;
@@ -287,7 +287,29 @@ public class Tests {
                 		+ "\n 3. Double + "
                 		+ "\n 4. Long "
     	        		+ "\nJūs atbildējot uz šo jautājumu nepareizi!"
-    	        		+ "\nJo reiķiot trījstūra laukumu gandrīz vienmār iznāks decimāl skaitlis"
+    	        		+ "\nJo reiķiot trījstūra laukumu rezultāts gandrīz vienmār būs decimāl skaitlis!"
+    	        		+ "\nPunkti 0 / 1");
+     		       rezultats();
+        	}
+    }
+        public static void atbilde7() {
+        	if(pareizi7 == true) {
+        		JOptionPane.showMessageDialog(null,"7. Jautājums\n Kuriem no šīm mainīgo datu tipiem izmantosi lai saglabātu burtus?"
+                		+ "\n 1. Byte "
+                		+ "\n 2. Char +" 
+                		+ "\n 3. Boolean "
+                		+ "\n 4. String +"
+                		+ "\nJūs atbildējot uz šo jautājumu pareizi!"
+                		+ "\nPunkti: 1 / 1");
+        		   rezultats();
+        	}else {
+        		JOptionPane.showMessageDialog(null,"7. Jautājums\n Kuriem no šīm mainīgo datu tipiem izmantosi lai saglabātu burtus?"
+                		+ "\n 1. Byte "
+                		+ "\n 2. Char +" 
+                		+ "\n 3. Boolean "
+                		+ "\n 4. String +"
+    	        		+ "\nJūs atbildējot uz šo jautājumu nepareizi!"
+    	        		+ "\nJo tikai Char un String tipa mainīgie var saglabāt burtus!"
     	        		+ "\nPunkti 0 / 1");
      		       rezultats();
         	}
