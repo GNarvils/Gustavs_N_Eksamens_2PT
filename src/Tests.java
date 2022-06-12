@@ -69,17 +69,34 @@ public class Tests {
         }
     }
     public static void Jautajums5(){
-        atbilde = Integer.parseInt(JOptionPane.showInputDialog("4. Jautājums\n Kuri no šīm mainīgiem ir dotas nepareizas vērtības!"
+        atbilde = Integer.parseInt(JOptionPane.showInputDialog("5. Jautājums\n Kuriem no šīm mainīgiem ir dotas nepareizas vērtības!"
         		+ "\n 1. char burts = 'a'; "
         		+ "\n 2. double x = 2.3;" 
         		+ "\n 3. boolean atbilde = patiess; "
         		+ "\n 4. int skaitlis = '1';"));
-        if(atbilde == 14 || atbilde == 41) {
+        if(atbilde == 34 || atbilde == 43) {
         	pareizi = pareizi + 1;
         	pareizi5 = true;
         	System.out.print("Pareizi");
         }
     }
+    public static void Jautajums6(){
+        atbilde = Integer.parseInt(JOptionPane.showInputDialog("6. Jautājums\n Kuriem no šīm mainīgo datu tipiem izmantosi lai aprēķinātu četrastūra laukumu!"
+        		+ "\n 1. Float "
+        		+ "\n 2. Int " 
+        		+ "\n 3. Double "
+        		+ "\n 4. Long "));
+        if(atbilde == 13 || atbilde == 31) {
+        	pareizi = pareizi + 1;
+        	pareizi6 = true;
+        	System.out.print("Pareizi");
+        }
+    }
+    public static void Jautajums7(){}
+    public static void Jautajums8(){}
+    public static void Jautajums9(){}
+    public static void Jautajums10(){}
+    public static void rezultats(){}
 	public static void main(String[] args) {
 		pazinojums();
         Jautajums1();
@@ -87,6 +104,8 @@ public class Tests {
         Jautajums3();
         Jautajums4();
         Jautajums5();
+        Jautajums6();
+        
 	}
 
 }
