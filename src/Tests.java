@@ -148,7 +148,7 @@ public class Tests {
     			+ "\n Q - lai beigtu testu!");
     	switch(rezultats) {
     	case "1" : atbilde1(); break;
-    	case "2" : break;
+    	case "2" : atbilde2(); break;
     	case "3" : break;
     	case "4" : break;
     	case "5" : break;
@@ -177,6 +177,29 @@ public class Tests {
 	        		+ "\n 3. Double + "
 	        		+ "\n 4. Boolean"
 	        		+ "\nJūs atbildējot uz šo jautājumu nepareizi!"
+	        		+ "\nJo tikai Int un Double tipa mainīgos šajā gadijumā var izmantot lai darītu matemātiskās darbības!"
+	        		+ "\nPunkti 0 / 1");
+ 		       rezultats();
+    	}
+    }
+    public static void atbilde2() {
+    	if(pareizi2 == true) {
+    		JOptionPane.showMessageDialog(null, "2. Jautājums\n Kuras no šīm mainīgo datu tipiem varētu izmantot lai saglabātu kāda dzimšanas gadu?"
+            		+ "\n 1. Byte "
+            		+ "\n 2. Short + "
+            		+ "\n 3. Int + "
+            		+ "\n 4. Long + "
+            		+ "\nJūs atbildējot uz šo jautājumu pareizi!"
+	        		+ "\nPunkti: 1 / 1");
+    		   rezultats();
+    	}else {
+    		JOptionPane.showMessageDialog(null, "2. Jautājums\n Kuras no šīm mainīgo datu tipiem varētu izmantot lai saglabātu kāda dzimšanas gadu?"
+            		+ "\n 1. Byte "
+            		+ "\n 2. Short + "
+            		+ "\n 3. Int + "
+            		+ "\n 4. Long +"
+	        		+ "\nJūs atbildējot uz šo jautājumu nepareizi!"
+	        		+ "\nJo Byte tipa mainīgā maksimālā vērtība ir 127!"
 	        		+ "\nPunkti 0 / 1");
  		       rezultats();
     	}
