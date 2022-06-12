@@ -14,6 +14,16 @@ public class Tests {
 	static boolean pareizi9 = false;
 	static boolean pareizi10 = false;
 	static String rezultats;
+	static String atbilde1 = " - Nepareizi!";
+	static String atbilde2 = " - Nepareizi!";
+	static String atbilde3 = " - Nepareizi!";
+	static String atbilde4 = " - Nepareizi!";
+	static String atbilde5 = " - Nepareizi!";
+	static String atbilde6 = " - Nepareizi!";
+	static String atbilde7 = " - Nepareizi!";
+	static String atbilde8 = " - Nepareizi!";
+	static String atbilde9 = " - Nepareizi!"; 
+	static String atbilde10 = " - Nepareizi!";
 	public static void pazinojums(){
     	JOptionPane.showMessageDialog(null, "Esiet sveicināti elektroniskā testā, kurš pārbaudīs jūsu zināšanas par programmēšanas valodas Java mainīgajiem un to datu tipiem!"
     			+ "\nTestā būs jautājumi kurām ir vairākas atbildes!"
@@ -30,6 +40,7 @@ public class Tests {
         if(atbilde == 13 || atbilde == 31) {
         	pareizi = pareizi + 1;
         	pareizi1 = true;
+        	atbilde1 = " - Pareizi!";
         }
     }
     public static void Jautajums2(){
@@ -41,6 +52,7 @@ public class Tests {
         if(atbilde == 234 || atbilde == 243 || atbilde == 324 || atbilde == 342 || atbilde == 423 || atbilde == 432) {
         	pareizi = pareizi + 1;
         	pareizi2 = true;
+        	atbilde2 = " - Pareizi!";
         }
     }
     public static void Jautajums3(){
@@ -52,6 +64,7 @@ public class Tests {
         if(atbilde == 23 || atbilde == 32) {
         	pareizi = pareizi + 1;
         	pareizi3 = true;
+        	atbilde3 = " - Pareizi!";
         }
     }
     public static void Jautajums4(){
@@ -63,6 +76,7 @@ public class Tests {
         if(atbilde == 14 || atbilde == 41) {
         	pareizi = pareizi + 1;
         	pareizi4 = true;
+        	atbilde4 = " - Pareizi!";
         }
     }
     public static void Jautajums5(){
@@ -74,6 +88,7 @@ public class Tests {
         if(atbilde == 34 || atbilde == 43) {
         	pareizi = pareizi + 1;
         	pareizi5 = true;
+        	atbilde5 = " - Pareizi!";
         }
     }
     public static void Jautajums6(){
@@ -85,6 +100,7 @@ public class Tests {
         if(atbilde == 13 || atbilde == 31) {
         	pareizi = pareizi + 1;
         	pareizi6 = true;
+        	atbilde6 = " - Pareizi!";
         }
     }
     public static void Jautajums7(){
@@ -96,6 +112,7 @@ public class Tests {
         if(atbilde == 24 || atbilde == 42) {
         	pareizi = pareizi + 1;
         	pareizi7 = true;
+        	atbilde7 = " - Pareizi!";
         }
     }
     public static void Jautajums8(){
@@ -107,6 +124,7 @@ public class Tests {
         if(atbilde == 12 || atbilde == 21) {
         	pareizi = pareizi + 1;
         	pareizi8 = true;
+        	atbilde8 = " - Pareizi!";
         }
     }
     public static void Jautajums9(){
@@ -118,6 +136,7 @@ public class Tests {
         if(atbilde == 24 || atbilde == 42) {
         	pareizi = pareizi + 1;
         	pareizi9 = true;
+        	atbilde9 = " - Pareizi!";
         }
     }
     public static void Jautajums10(){
@@ -129,22 +148,24 @@ public class Tests {
         if(atbilde == 123 || atbilde == 132 || atbilde == 213 || atbilde == 231 || atbilde == 321 || atbilde == 312) {
         	pareizi = pareizi + 1;
         	pareizi10 = true;
+        	atbilde10 = " - Pareizi!";
         }
     }
     public static void rezultats(){
+
     	 rezultats = JOptionPane.showInputDialog(null, "Apsveicu jūs abildējāt uz "+pareizi+" no 10 jautājumiem pareizi!\n"
     			+ "\nPlusi ir pareizās atbildes!"
     			+ "Jūs varat apskatīt jūsu rezultātus katrā jautājumā ierakstot tā atiecošā numuru:"
-    			+ "\n1. Jautājums"
-    			+ "\n2. Jautājums"
-    			+ "\n3. Jautājums"
-    			+ "\n4. Jautājums"
-    			+ "\n5. Jautājums"
-    			+ "\n6. Jautājums"
-    			+ "\n7. Jautājums"
-    			+ "\n8. Jautājums"
-    			+ "\n9. Jautājums"
-    			+ "\n10 Jautājums"
+    			+ "\n1. Jautājums" + atbilde1
+    			+ "\n2. Jautājums" + atbilde2
+    			+ "\n3. Jautājums" + atbilde3
+    			+ "\n4. Jautājums" + atbilde4
+    			+ "\n5. Jautājums" + atbilde5
+    			+ "\n6. Jautājums" + atbilde6
+    			+ "\n7. Jautājums" + atbilde7
+    			+ "\n8. Jautājums" + atbilde8
+    			+ "\n9. Jautājums" + atbilde9
+    			+ "\n10 Jautājums" + atbilde10
     			+ "\n Q - lai beigtu testu!");
     	switch(rezultats) {
     	case "1" : atbilde1(); break;
@@ -156,7 +177,7 @@ public class Tests {
     	case "7" : atbilde7(); break;
     	case "8" : atbilde8(); break;
     	case "9" : atbilde9(); break;
-    	case "10" : break;
+    	case "10" : atbilde10(); break;
     	default : JOptionPane.showMessageDialog(null, "Uz redzēšanos!");
     	}
     }
@@ -354,6 +375,28 @@ public class Tests {
                 		+ "\n 4. true +" 
     	        		+ "\nJūs atbildējot uz šo jautājumu nepareizi!"
     	        		+ "\nJo, kad definējot būla tipa mainīgo nevar vērtību rakstīt ar lieliem burtiem un arī nevar rakstīt citā valodā!"
+    	        		+ "\nPunkti 0 / 1");
+     		       rezultats();
+        	}
+    }
+        public static void atbilde10() {
+        	if(pareizi10 == true) {
+        		JOptionPane.showMessageDialog(null,"10. Jautājums\n Kuriem no šīm mainīgo datu tipiem sākuma vērtība ir 0"
+                		+ "\n 1. Short +"
+                		+ "\n 2. Int + " 
+                		+ "\n 3. Long + "
+                		+ "\n 4. Float "
+                		+ "\nJūs atbildējot uz šo jautājumu pareizi!"
+                		+ "\nPunkti: 1 / 1");
+        		   rezultats();
+        	}else {
+        		JOptionPane.showMessageDialog(null,"10. Jautājums\n Kuriem no šīm mainīgo datu tipiem sākuma vērtība ir 0"
+                		+ "\n 1. Short +"
+                		+ "\n 2. Int + " 
+                		+ "\n 3. Long + "
+                		+ "\n 4. Float "
+    	        		+ "\nJūs atbildējot uz šo jautājumu nepareizi!"
+    	        		+ "\nJo Float tipa mainīgā sākuma vērtiba ir 0.0!"
     	        		+ "\nPunkti 0 / 1");
      		       rezultats();
         	}
