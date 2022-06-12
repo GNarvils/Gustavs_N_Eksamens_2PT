@@ -149,7 +149,7 @@ public class Tests {
     	switch(rezultats) {
     	case "1" : atbilde1(); break;
     	case "2" : atbilde2(); break;
-    	case "3" : break;
+    	case "3" : atbilde3(); break;
     	case "4" : break;
     	case "5" : break;
     	case "6" : break;
@@ -203,6 +203,28 @@ public class Tests {
 	        		+ "\nPunkti 0 / 1");
  		       rezultats();
     	}
+    }
+        public static void atbilde3() {
+        	if(pareizi3 == true) {
+        		JOptionPane.showMessageDialog(null,"3. Jautājums\n Kurus no šīm mainīgiem datu tipiem varētu izmantot lai saglabātu decimāl skaitļus?"
+                		+ "\n 1. Long "
+                		+ "\n 2. Float + "
+                		+ "\n 3. Double + "
+                		+ "\n 4. Int"
+                		+ "\nJūs atbildējot uz šo jautājumu pareizi!"
+                		+ "\nPunkti: 1 / 1");
+        		   rezultats();
+        	}else {
+        		JOptionPane.showMessageDialog(null,"3. Jautājums\n Kurus no šīm mainīgiem datu tipiem varētu izmantot lai saglabātu decimāl skaitļus?"
+                		+ "\n 1. Long "
+                		+ "\n 2. Float + "
+                		+ "\n 3. Double + "
+                		+ "\n 4. Int"
+    	        		+ "\nJūs atbildējot uz šo jautājumu nepareizi!"
+    	        		+ "\nJo Long un Int tipa mainīgos var tikaim rakstīt veselus skaitļus!"
+    	        		+ "\nPunkti 0 / 1");
+     		       rezultats();
+        	}
     }
 	public static void main(String[] args) {
 		pazinojums();
