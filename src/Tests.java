@@ -155,7 +155,7 @@ public class Tests {
     	case "6" : atbilde6(); break;
     	case "7" : atbilde7(); break;
     	case "8" : atbilde8(); break;
-    	case "9" : break;
+    	case "9" : atbilde9(); break;
     	case "10" : break;
     	default : JOptionPane.showMessageDialog(null, "Uz redzēšanos!");
     	}
@@ -332,6 +332,28 @@ public class Tests {
                 		+ "\n 4. Boolean "
     	        		+ "\nJūs atbildējot uz šo jautājumu nepareizi!"
     	        		+ "\nJo Int aizņem 4 baitus atmiņas un Boolean aizņem 1 baitu atmiņas lai definētu!"
+    	        		+ "\nPunkti 0 / 1");
+     		       rezultats();
+        	}
+    }
+        public static void atbilde9() {
+        	if(pareizi9 == true) {
+        		JOptionPane.showMessageDialog(null,"9. Jautājums\n Kuras no šīm vērtībām varētu dot būla tipa mainīgajam?"
+                		+ "\n 1. TRUE "
+                		+ "\n 2. false +" 
+                		+ "\n 3. nepatiess "
+                		+ "\n 4. true +" 
+                		+ "\nJūs atbildējot uz šo jautājumu pareizi!"
+                		+ "\nPunkti: 1 / 1");
+        		   rezultats();
+        	}else {
+        		JOptionPane.showMessageDialog(null,"9. Jautājums\n Kuras no šīm vērtībām varētu dot būla tipa mainīgajam?"
+                		+ "\n 1. TRUE "
+                		+ "\n 2. false +" 
+                		+ "\n 3. nepatiess "
+                		+ "\n 4. true +" 
+    	        		+ "\nJūs atbildējot uz šo jautājumu nepareizi!"
+    	        		+ "\nJo, kad definējot būla tipa mainīgo nevar vērtību rakstīt ar lieliem burtiem un arī nevar rakstīt citā valodā!"
     	        		+ "\nPunkti 0 / 1");
      		       rezultats();
         	}
