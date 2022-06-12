@@ -152,7 +152,7 @@ public class Tests {
     	case "3" : atbilde3(); break;
     	case "4" : atbilde4(); break;
     	case "5" : atbilde5(); break;
-    	case "6" : break;
+    	case "6" : atbilde6(); break;
     	case "7" : break;
     	case "8" : break;
     	case "9" : break;
@@ -266,6 +266,28 @@ public class Tests {
                 		+ "\\n 4. int skaitlis = \"1\"; +"
     	        		+ "\nJūs atbildējot uz šo jautājumu nepareizi!"
     	        		+ "\nJo boolean tipa mainīgā vērtība ir jāraksta angliski kā true un int vērtība nevar būt teksts!"
+    	        		+ "\nPunkti 0 / 1");
+     		       rezultats();
+        	}
+    }
+        public static void atbilde6() {
+        	if(pareizi6 == true) {
+        		JOptionPane.showMessageDialog(null,"6. Jautājums\n Kuriem no šīm mainīgo datu tipiem izmantosi lai aprēķinātu trījstūra laukumu?"
+                		+ "\n 1. Float + "
+                		+ "\n 2. Int " 
+                		+ "\n 3. Double + "
+                		+ "\n 4. Long "
+                		+ "\nJūs atbildējot uz šo jautājumu pareizi!"
+                		+ "\nPunkti: 1 / 1");
+        		   rezultats();
+        	}else {
+        		JOptionPane.showMessageDialog(null,"6. Jautājums\n Kuriem no šīm mainīgo datu tipiem izmantosi lai aprēķinātu trījstūra laukumu?"
+                		+ "\n 1. Float + "
+                		+ "\n 2. Int " 
+                		+ "\n 3. Double + "
+                		+ "\n 4. Long "
+    	        		+ "\nJūs atbildējot uz šo jautājumu nepareizi!"
+    	        		+ "\nJo reiķiot trījstūra laukumu gandrīz vienmār iznāks decimāl skaitlis"
     	        		+ "\nPunkti 0 / 1");
      		       rezultats();
         	}
