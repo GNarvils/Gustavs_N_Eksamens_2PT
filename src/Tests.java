@@ -116,7 +116,18 @@ public class Tests {
         	System.out.print("Pareizi");
         }
     }
-    public static void Jautajums9(){}
+    public static void Jautajums9(){
+        atbilde = Integer.parseInt(JOptionPane.showInputDialog("9. Jautājums\n Kuras no šīm vērtībām varētu dot būla tipa mainīgajam?"
+        		+ "\n 1. TRUE "
+        		+ "\n 2. false " 
+        		+ "\n 3. nepatiess "
+        		+ "\n 4. true "));
+        if(atbilde == 24 || atbilde == 42) {
+        	pareizi = pareizi + 1;
+        	pareizi9 = true;
+        	System.out.print("Pareizi");
+        }
+    }
     public static void Jautajums10(){}
     public static void rezultats(){}
 	public static void main(String[] args) {
