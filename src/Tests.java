@@ -1,6 +1,7 @@
 import javax.swing.JOptionPane;
 
 public class Tests {
+	static int atbilde;
 	static int pareizi = 0;
 	static boolean pareizi1 = false;
 	static boolean pareizi2 = false;
@@ -16,11 +17,11 @@ public class Tests {
     	JOptionPane.showMessageDialog(null, "Esiet sveicināti elektroniskā testā, kurš pārbaudīs jūsu zināšanas par programmēšanas valodas Java mainīgajiem un to datu tipiem!"
     			+ "\nTestā būs jautājumi kurām ir vairākas atbildes!"
     			+ "\nJa iesniegtu atbildi uz jautājuma, rakstiet visus atbilžu variantus kopā!"
-    			+ "\nPiemēram atbilde ir pirmais un otrais variants tad jūs rakstīsiet 12 vai 21"
+    			+ "\nPiemēram atbilde ir pirmais un otrais atbilžu variants, tad jūs rakstīsiet 12 vai 21"
     			+ "\nSpiediet pogu ar apzīmējumu OK lai sāktu testu!");
     }
     public static void Jautajums1(){
-        int atbilde = Integer.parseInt(JOptionPane.showInputDialog("1. Jautājums\n Ar kuriem mainīgiem datu tipiem var veikt matemātiskās darbības!"
+        atbilde = Integer.parseInt(JOptionPane.showInputDialog("1. Jautājums\n Ar kuriem mainīgiem datu tipiem var veikt matemātiskās darbības!"
         		+ "\n 1. Int "
         		+ "\n 2. Char "
         		+ "\n 3. Double "
@@ -32,7 +33,7 @@ public class Tests {
         }
     }
     public static void Jautajums2(){
-        int atbilde = Integer.parseInt(JOptionPane.showInputDialog("2. Jautājums\n Kuras no šīm mainīgo datu tipiem varētu izmantot lai saglabātu !"
+        atbilde = Integer.parseInt(JOptionPane.showInputDialog("2. Jautājums\n Kuras no šīm mainīgo datu tipiem varētu izmantot lai saglabātu !"
         		+ "\n 1. Byte "
         		+ "\n 2. Short "
         		+ "\n 3. Int "
@@ -44,7 +45,7 @@ public class Tests {
         }
     }
     public static void Jautajums3(){
-        int atbilde = Integer.parseInt(JOptionPane.showInputDialog("3. Jautājums\n Kurus no šīm mainīgiem datu tipiem varētu izmantot lai saglabātu decimāl skaitļus!"
+        atbilde = Integer.parseInt(JOptionPane.showInputDialog("3. Jautājums\n Kurus no šīm mainīgiem datu tipiem varētu izmantot lai saglabātu decimāl skaitļus!"
         		+ "\n 1. Long "
         		+ "\n 2. Float "
         		+ "\n 3. Double "
@@ -56,7 +57,7 @@ public class Tests {
         }
     }
     public static void Jautajums4(){
-        int atbilde = Integer.parseInt(JOptionPane.showInputDialog("4. Jautājums\n Kuri no šīm mainīgiem ir definēti pareizi!"
+        atbilde = Integer.parseInt(JOptionPane.showInputDialog("4. Jautājums\n Kuri no šīm mainīgiem ir definēti pareizi!"
         		+ "\n 1. double skaitlis; "
         		+ "\n 2. float 3skaitlis" 
         		+ "\n 3. int skaitlis-15 "
@@ -67,12 +68,25 @@ public class Tests {
         	System.out.print("Pareizi");
         }
     }
+    public static void Jautajums5(){
+        atbilde = Integer.parseInt(JOptionPane.showInputDialog("4. Jautājums\n Kuri no šīm mainīgiem ir dotas nepareizas vērtības!"
+        		+ "\n 1. char burts = 'a'; "
+        		+ "\n 2. double x = 2.3;" 
+        		+ "\n 3. boolean atbilde = patiess; "
+        		+ "\n 4. int skaitlis = '1';"));
+        if(atbilde == 14 || atbilde == 41) {
+        	pareizi = pareizi + 1;
+        	pareizi5 = true;
+        	System.out.print("Pareizi");
+        }
+    }
 	public static void main(String[] args) {
 		pazinojums();
         Jautajums1();
         Jautajums2();
         Jautajums3();
         Jautajums4();
+        Jautajums5();
 	}
 
 }
