@@ -21,7 +21,7 @@ public class Tests {
     			+ "\nSpiediet pogu ar apzīmējumu OK lai sāktu testu!");
     }
     public static void Jautajums1(){
-        atbilde = Integer.parseInt(JOptionPane.showInputDialog("1. Jautājums\n Ar kuriem mainīgiem datu tipiem var veikt matemātiskās darbības!"
+        atbilde = Integer.parseInt(JOptionPane.showInputDialog("1. Jautājums\n Ar kuriem mainīgiem datu tipiem var veikt matemātiskās darbības?"
         		+ "\n 1. Int "
         		+ "\n 2. Char "
         		+ "\n 3. Double "
@@ -33,7 +33,7 @@ public class Tests {
         }
     }
     public static void Jautajums2(){
-        atbilde = Integer.parseInt(JOptionPane.showInputDialog("2. Jautājums\n Kuras no šīm mainīgo datu tipiem varētu izmantot lai saglabātu !"
+        atbilde = Integer.parseInt(JOptionPane.showInputDialog("2. Jautājums\n Kuras no šīm mainīgo datu tipiem varētu izmantot lai saglabātu kāda dzimšanas gadu?"
         		+ "\n 1. Byte "
         		+ "\n 2. Short "
         		+ "\n 3. Int "
@@ -45,7 +45,7 @@ public class Tests {
         }
     }
     public static void Jautajums3(){
-        atbilde = Integer.parseInt(JOptionPane.showInputDialog("3. Jautājums\n Kurus no šīm mainīgiem datu tipiem varētu izmantot lai saglabātu decimāl skaitļus!"
+        atbilde = Integer.parseInt(JOptionPane.showInputDialog("3. Jautājums\n Kurus no šīm mainīgiem datu tipiem varētu izmantot lai saglabātu decimāl skaitļus?"
         		+ "\n 1. Long "
         		+ "\n 2. Float "
         		+ "\n 3. Double "
@@ -57,11 +57,11 @@ public class Tests {
         }
     }
     public static void Jautajums4(){
-        atbilde = Integer.parseInt(JOptionPane.showInputDialog("4. Jautājums\n Kuri no šīm mainīgiem ir definēti pareizi!"
+        atbilde = Integer.parseInt(JOptionPane.showInputDialog("4. Jautājums\n Kuri no šīm mainīgiem ir definēti pareizi?"
         		+ "\n 1. double skaitlis; "
-        		+ "\n 2. float 3skaitlis" 
-        		+ "\n 3. int skaitlis-15 "
-        		+ "\n 4. char burts"));
+        		+ "\n 2. float 3skaitlis; " 
+        		+ "\n 3. int skaitlis-15; "
+        		+ "\n 4. char burts; "));
         if(atbilde == 14 || atbilde == 41) {
         	pareizi = pareizi + 1;
         	pareizi4 = true;
@@ -69,7 +69,7 @@ public class Tests {
         }
     }
     public static void Jautajums5(){
-        atbilde = Integer.parseInt(JOptionPane.showInputDialog("5. Jautājums\n Kuriem no šīm mainīgiem ir dotas nepareizas vērtības!"
+        atbilde = Integer.parseInt(JOptionPane.showInputDialog("5. Jautājums\n Kuriem no šīm mainīgiem ir dotas nepareizas vērtības?"
         		+ "\n 1. char burts = 'a'; "
         		+ "\n 2. double x = 2.3;" 
         		+ "\n 3. boolean atbilde = patiess; "
@@ -81,7 +81,7 @@ public class Tests {
         }
     }
     public static void Jautajums6(){
-        atbilde = Integer.parseInt(JOptionPane.showInputDialog("6. Jautājums\n Kuriem no šīm mainīgo datu tipiem izmantosi lai aprēķinātu trījstūra laukumu!"
+        atbilde = Integer.parseInt(JOptionPane.showInputDialog("6. Jautājums\n Kuriem no šīm mainīgo datu tipiem izmantosi lai aprēķinātu trījstūra laukumu?"
         		+ "\n 1. Float "
         		+ "\n 2. Int " 
         		+ "\n 3. Double "
@@ -93,7 +93,7 @@ public class Tests {
         }
     }
     public static void Jautajums7(){
-        atbilde = Integer.parseInt(JOptionPane.showInputDialog("7. Jautājums\n Kuriem no šīm mainīgo datu tipiem izmantosi lai saglabātu burtus!"
+        atbilde = Integer.parseInt(JOptionPane.showInputDialog("7. Jautājums\n Kuriem no šīm mainīgo datu tipiem izmantosi lai saglabātu burtus?"
         		+ "\n 1. Byte "
         		+ "\n 2. Char " 
         		+ "\n 3. Boolean "
@@ -104,7 +104,18 @@ public class Tests {
         	System.out.print("Pareizi");
         }
     }
-    public static void Jautajums8(){}
+    public static void Jautajums8(){
+        atbilde = Integer.parseInt(JOptionPane.showInputDialog("8. Jautājums\n Kuriem no šīm mainīgajiem aizņem 2 baitu atmiņas lai definētu?"
+        		+ "\n 1. Short "
+        		+ "\n 2. Char " 
+        		+ "\n 3. Int "
+        		+ "\n 4. Boolean "));
+        if(atbilde == 12 || atbilde == 21) {
+        	pareizi = pareizi + 1;
+        	pareizi8 = true;
+        	System.out.print("Pareizi");
+        }
+    }
     public static void Jautajums9(){}
     public static void Jautajums10(){}
     public static void rezultats(){}
