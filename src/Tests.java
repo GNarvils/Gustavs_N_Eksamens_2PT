@@ -81,7 +81,7 @@ public class Tests {
         }
     }
     public static void Jautajums6(){
-        atbilde = Integer.parseInt(JOptionPane.showInputDialog("6. Jautājums\n Kuriem no šīm mainīgo datu tipiem izmantosi lai aprēķinātu četrastūra laukumu!"
+        atbilde = Integer.parseInt(JOptionPane.showInputDialog("6. Jautājums\n Kuriem no šīm mainīgo datu tipiem izmantosi lai aprēķinātu trījstūra laukumu!"
         		+ "\n 1. Float "
         		+ "\n 2. Int " 
         		+ "\n 3. Double "
@@ -92,7 +92,18 @@ public class Tests {
         	System.out.print("Pareizi");
         }
     }
-    public static void Jautajums7(){}
+    public static void Jautajums7(){
+        atbilde = Integer.parseInt(JOptionPane.showInputDialog("7. Jautājums\n Kuriem no šīm mainīgo datu tipiem izmantosi lai saglabātu burtus!"
+        		+ "\n 1. Byte "
+        		+ "\n 2. Char " 
+        		+ "\n 3. Boolean "
+        		+ "\n 4. String "));
+        if(atbilde == 24 || atbilde == 42) {
+        	pareizi = pareizi + 1;
+        	pareizi7 = true;
+        	System.out.print("Pareizi");
+        }
+    }
     public static void Jautajums8(){}
     public static void Jautajums9(){}
     public static void Jautajums10(){}
@@ -105,7 +116,10 @@ public class Tests {
         Jautajums4();
         Jautajums5();
         Jautajums6();
-        
+        Jautajums7();
+        Jautajums8();
+        Jautajums9();
+        Jautajums10();
 	}
 
 }
