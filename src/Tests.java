@@ -154,7 +154,7 @@ public class Tests {
     	case "5" : atbilde5(); break;
     	case "6" : atbilde6(); break;
     	case "7" : atbilde7(); break;
-    	case "8" : break;
+    	case "8" : atbilde8(); break;
     	case "9" : break;
     	case "10" : break;
     	default : JOptionPane.showMessageDialog(null, "Uz redzēšanos!");
@@ -310,6 +310,28 @@ public class Tests {
                 		+ "\n 4. String +"
     	        		+ "\nJūs atbildējot uz šo jautājumu nepareizi!"
     	        		+ "\nJo tikai Char un String tipa mainīgie var saglabāt burtus!"
+    	        		+ "\nPunkti 0 / 1");
+     		       rezultats();
+        	}
+    }
+        public static void atbilde8() {
+        	if(pareizi8 == true) {
+        		JOptionPane.showMessageDialog(null,"8. Jautājums\n Kuriem no šīm mainīgajiem aizņem 2 baitu atmiņas lai definētu?"
+                		+ "\n 1. Short + "
+                		+ "\n 2. Char + " 
+                		+ "\n 3. Int "
+                		+ "\n 4. Boolean "
+                		+ "\nJūs atbildējot uz šo jautājumu pareizi!"
+                		+ "\nPunkti: 1 / 1");
+        		   rezultats();
+        	}else {
+        		JOptionPane.showMessageDialog(null,"8. Jautājums\n Kuriem no šīm mainīgajiem aizņem 2 baitu atmiņas lai definētu?"
+                		+ "\n 1. Short + "
+                		+ "\n 2. Char + " 
+                		+ "\n 3. Int "
+                		+ "\n 4. Boolean "
+    	        		+ "\nJūs atbildējot uz šo jautājumu nepareizi!"
+    	        		+ "\nJo Int aizņem 4 baitus atmiņas un Boolean aizņem 1 baitu atmiņas lai definētu!"
     	        		+ "\nPunkti 0 / 1");
      		       rezultats();
         	}
