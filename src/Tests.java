@@ -29,7 +29,6 @@ public class Tests {
         if(atbilde == 13 || atbilde == 31) {
         	pareizi = pareizi + 1;
         	pareizi1 = true;
-        	System.out.print("Pareizi");
         }
     }
     public static void Jautajums2(){
@@ -41,7 +40,6 @@ public class Tests {
         if(atbilde == 234 || atbilde == 243 || atbilde == 324 || atbilde == 342 || atbilde == 423 || atbilde == 432) {
         	pareizi = pareizi + 1;
         	pareizi2 = true;
-        	System.out.print("Pareizi");
         }
     }
     public static void Jautajums3(){
@@ -53,7 +51,6 @@ public class Tests {
         if(atbilde == 23 || atbilde == 32) {
         	pareizi = pareizi + 1;
         	pareizi3 = true;
-        	System.out.print("Pareizi");
         }
     }
     public static void Jautajums4(){
@@ -65,7 +62,6 @@ public class Tests {
         if(atbilde == 14 || atbilde == 41) {
         	pareizi = pareizi + 1;
         	pareizi4 = true;
-        	System.out.print("Pareizi");
         }
     }
     public static void Jautajums5(){
@@ -77,7 +73,6 @@ public class Tests {
         if(atbilde == 34 || atbilde == 43) {
         	pareizi = pareizi + 1;
         	pareizi5 = true;
-        	System.out.print("Pareizi");
         }
     }
     public static void Jautajums6(){
@@ -89,7 +84,6 @@ public class Tests {
         if(atbilde == 13 || atbilde == 31) {
         	pareizi = pareizi + 1;
         	pareizi6 = true;
-        	System.out.print("Pareizi");
         }
     }
     public static void Jautajums7(){
@@ -101,7 +95,6 @@ public class Tests {
         if(atbilde == 24 || atbilde == 42) {
         	pareizi = pareizi + 1;
         	pareizi7 = true;
-        	System.out.print("Pareizi");
         }
     }
     public static void Jautajums8(){
@@ -113,7 +106,6 @@ public class Tests {
         if(atbilde == 12 || atbilde == 21) {
         	pareizi = pareizi + 1;
         	pareizi8 = true;
-        	System.out.print("Pareizi");
         }
     }
     public static void Jautajums9(){
@@ -125,10 +117,19 @@ public class Tests {
         if(atbilde == 24 || atbilde == 42) {
         	pareizi = pareizi + 1;
         	pareizi9 = true;
-        	System.out.print("Pareizi");
         }
     }
-    public static void Jautajums10(){}
+    public static void Jautajums10(){
+        atbilde = Integer.parseInt(JOptionPane.showInputDialog("10. Jautājums\n Kuriem no šīm mainīgo datu tipiem sākuma vērtība ir 0"
+        		+ "\n 1. Short "
+        		+ "\n 2. Int " 
+        		+ "\n 3. Long "
+        		+ "\n 4. Float "));
+        if(atbilde == 123 || atbilde == 132 || atbilde == 213 || atbilde == 231 || atbilde == 321 || atbilde == 312) {
+        	pareizi = pareizi + 1;
+        	pareizi10 = true;
+        }
+    }
     public static void rezultats(){}
 	public static void main(String[] args) {
 		pazinojums();
