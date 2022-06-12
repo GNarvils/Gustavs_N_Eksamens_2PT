@@ -13,6 +13,7 @@ public class Tests {
 	static boolean pareizi8 = false;
 	static boolean pareizi9 = false;
 	static boolean pareizi10 = false;
+	static String rezultats;
 	public static void pazinojums(){
     	JOptionPane.showMessageDialog(null, "Esiet sveicināti elektroniskā testā, kurš pārbaudīs jūsu zināšanas par programmēšanas valodas Java mainīgajiem un to datu tipiem!"
     			+ "\nTestā būs jautājumi kurām ir vairākas atbildes!"
@@ -130,7 +131,56 @@ public class Tests {
         	pareizi10 = true;
         }
     }
-    public static void rezultats(){}
+    public static void rezultats(){
+    	 rezultats = JOptionPane.showInputDialog(null, "Apsveicu jūs abildējāt uz "+pareizi+" no 10 jautājumiem pareizi!\n"
+    			+ "\nPlusi ir pareizās atbildes!"
+    			+ "Jūs varat apskatīt jūsu rezultātus katrā jautājumā ierakstot tā atiecošā numuru:"
+    			+ "\n1. Jautājums"
+    			+ "\n2. Jautājums"
+    			+ "\n3. Jautājums"
+    			+ "\n4. Jautājums"
+    			+ "\n5. Jautājums"
+    			+ "\n6. Jautājums"
+    			+ "\n7. Jautājums"
+    			+ "\n8. Jautājums"
+    			+ "\n9. Jautājums"
+    			+ "\n10 Jautājums"
+    			+ "\n Q - lai beigtu testu!");
+    	switch(rezultats) {
+    	case "1" : atbilde1(); break;
+    	case "2" : break;
+    	case "3" : break;
+    	case "4" : break;
+    	case "5" : break;
+    	case "6" : break;
+    	case "7" : break;
+    	case "8" : break;
+    	case "9" : break;
+    	case "10" : break;
+    	default : JOptionPane.showMessageDialog(null, "Uz redzēšanos!");
+    	}
+    }
+    public static void atbilde1() {
+    	if(pareizi1 == true) {
+    		JOptionPane.showMessageDialog(null,"1. Jautājums\n Ar kuriem mainīgiem datu tipiem var veikt matemātiskās darbības?"
+    	        		+ "\n 1. Int + "
+    	        		+ "\n 2. Char "
+    	        		+ "\n 3. Double + "
+    	        		+ "\n 4. Boolean"
+    	        		+ "\nJūs atbildējot uz šo jautājumu pareizi!"
+    	        		+ "\nPunkti: 1 / 1");
+    		   rezultats();
+    	}else {
+ 		    JOptionPane.showMessageDialog(null,"1. Jautājums\n Ar kuriem mainīgiem datu tipiem var veikt matemātiskās darbības?"
+	        		+ "\n 1. Int + "
+	        		+ "\n 2. Char "
+	        		+ "\n 3. Double + "
+	        		+ "\n 4. Boolean"
+	        		+ "\nJūs atbildējot uz šo jautājumu nepareizi!"
+	        		+ "\nPunkti 0 / 1");
+ 		       rezultats();
+    	}
+    }
 	public static void main(String[] args) {
 		pazinojums();
         Jautajums1();
@@ -143,6 +193,7 @@ public class Tests {
         Jautajums8();
         Jautajums9();
         Jautajums10();
+        rezultats();
 	}
 
 }
