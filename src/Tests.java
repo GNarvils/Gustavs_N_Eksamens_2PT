@@ -20,7 +20,7 @@ public class Tests {
     			+ "\nSpiediet pogu ar apzīmējumu OK lai sāktu testu!");
     }
     public static void Jautajums1(){
-        int atbilde = Integer.parseInt(JOptionPane.showInputDialog("1. Jautājums\n Ar kuriem mainīgajiem var veikt matemātiskās darbības!"
+        int atbilde = Integer.parseInt(JOptionPane.showInputDialog("1. Jautājums\n Ar kuriem mainīgiem datu tipiem var veikt matemātiskās darbības!"
         		+ "\n 1. Int "
         		+ "\n 2. Char "
         		+ "\n 3. Double "
@@ -44,7 +44,7 @@ public class Tests {
         }
     }
     public static void Jautajums3(){
-        int atbilde = Integer.parseInt(JOptionPane.showInputDialog("2. Jautājums\n Kurus no šīm mainīgiem varētu izmantot lai saglabātu decimāl skaitļus!"
+        int atbilde = Integer.parseInt(JOptionPane.showInputDialog("3. Jautājums\n Kurus no šīm mainīgiem datu tipiem varētu izmantot lai saglabātu decimāl skaitļus!"
         		+ "\n 1. Long "
         		+ "\n 2. Float "
         		+ "\n 3. Double "
@@ -55,11 +55,24 @@ public class Tests {
         	System.out.print("Pareizi");
         }
     }
+    public static void Jautajums4(){
+        int atbilde = Integer.parseInt(JOptionPane.showInputDialog("4. Jautājums\n Kuri no šīm mainīgiem ir definēti pareizi!"
+        		+ "\n 1. double skaitlis; "
+        		+ "\n 2. float 3skaitlis" 
+        		+ "\n 3. int skaitlis-15 "
+        		+ "\n 4. char burts"));
+        if(atbilde == 14 || atbilde == 41) {
+        	pareizi = pareizi + 1;
+        	pareizi4 = true;
+        	System.out.print("Pareizi");
+        }
+    }
 	public static void main(String[] args) {
 		pazinojums();
         Jautajums1();
         Jautajums2();
         Jautajums3();
+        Jautajums4();
 	}
 
 }
