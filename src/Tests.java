@@ -28,12 +28,25 @@ public class Tests {
         if(atbilde == 13 || atbilde == 31) {
         	pareizi = pareizi + 1;
         	pareizi1 = true;
+        	System.out.println("Pareizi");
+        }
+    }
+    public static void Jautajums2(){
+        int atbilde = Integer.parseInt(JOptionPane.showInputDialog("2. Jautājums\n Kuras no šīm mainīgo datu tipiem varētu izmantot lai saglabātu !"
+        		+ "\n 1. Byte "
+        		+ "\n 2. Short "
+        		+ "\n 3. Int "
+        		+ "\n 4. Long"));
+        if(atbilde == 234 || atbilde == 243 || atbilde == 324 || atbilde == 342 || atbilde == 423 || atbilde == 432) {
+        	pareizi = pareizi + 1;
+        	pareizi2 = true;
+        	System.out.println("Pareizi");
         }
     }
 	public static void main(String[] args) {
 		pazinojums();
         Jautajums1();
-        System.out.println(pareizi1+""+pareizi);
+        Jautajums2();
        
 	}
 
