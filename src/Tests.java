@@ -70,7 +70,7 @@ public class Tests {
         		+ "\n 1. char burts = 'a'; "
         		+ "\n 2. double x = 2.3;" 
         		+ "\n 3. boolean atbilde = patiess; "
-        		+ "\n 4. int skaitlis = '1';"));
+        		+ "\n 4. int skaitlis = \"1\";"));
         if(atbilde == 34 || atbilde == 43) {
         	pareizi = pareizi + 1;
         	pareizi5 = true;
@@ -151,7 +151,7 @@ public class Tests {
     	case "2" : atbilde2(); break;
     	case "3" : atbilde3(); break;
     	case "4" : atbilde4(); break;
-    	case "5" : break;
+    	case "5" : atbilde5(); break;
     	case "6" : break;
     	case "7" : break;
     	case "8" : break;
@@ -248,6 +248,28 @@ public class Tests {
      		       rezultats();
         	}
     }
+        public static void atbilde5() {
+        	if(pareizi5 == true) {
+        		JOptionPane.showMessageDialog(null,"5. Jautājums\n Kuriem no šīm mainīgiem ir dotas nepareizas vērtības?"
+                		+ "\n 1. char burts = 'a';  "
+                		+ "\n 2. double x = 2.3; " 
+                		+ "\n 3. boolean atbilde = patiess; +"
+                		+ "\n 4. int skaitlis = \"1\"; +"
+                		+ "\nJūs atbildējot uz šo jautājumu pareizi!"
+                		+ "\nPunkti: 1 / 1");
+        		   rezultats();
+        	}else {
+        		JOptionPane.showMessageDialog(null,"5. Jautājums\n Kuriem no šīm mainīgiem ir dotas nepareizas vērtības?"
+                		+ "\n 1. char burts = 'a';  "
+                		+ "\n 2. double x = 2.3; " 
+                		+ "\n 3. boolean atbilde = patiess; +"
+                		+ "\\n 4. int skaitlis = \"1\"; +"
+    	        		+ "\nJūs atbildējot uz šo jautājumu nepareizi!"
+    	        		+ "\nJo boolean tipa mainīgā vērtība ir jāraksta angliski kā true un int vērtība nevar būt teksts!"
+    	        		+ "\nPunkti 0 / 1");
+     		       rezultats();
+        	}
+    }
 	public static void main(String[] args) {
 		pazinojums();
         Jautajums1();
@@ -262,5 +284,4 @@ public class Tests {
         Jautajums10();
         rezultats();
 	}
-
 }
