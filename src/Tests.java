@@ -25,18 +25,23 @@ public class Tests {
 	static String atbilde9 = " - Nepareizi!"; 
 	static String atbilde10 = " - Nepareizi!";
 	public static void pazinojums(){
-    	JOptionPane.showMessageDialog(null, "Esiet sveicināti elektroniskā testā, kurš pārbaudīs jūsu zināšanas par programmēšanas valodas Java mainīgajiem un to datu tipiem!"
-    			+ "\nTestā būs jautājumi kurām ir vairākas atbildes!"
-    			+ "\nJa iesniegtu atbildi uz jautājuma, rakstiet visus atbilžu variantus kopā!"
-    			+ "\nPiemēram atbilde ir pirmais un otrais atbilžu variants, tad jūs rakstīsiet 12 vai 21"
+    	JOptionPane.showMessageDialog(null, "Tests par Mainīgajiem!"
+    			+ "\nEsiet sveicināti elektroniskā testā, kurš pārbaudīs jūsu zināšanas par programmēšanas valodas Java mainīgajiem un to datu tipiem!"
+    			+ "\nTestā visiem jautājumiem ir vairākas atbildes!"
+    			+ "\nJa iesniegtu atbildi uz jautājuma, ierakstiet atbilžu varianta ciparus!"
+    			+ "\nPiemēram, ja atbilde uz jautājuma ir pirmais un otrais atbilžu variants, tad jūs rakstīsiet 12 vai 21"
     			+ "\nSpiediet pogu ar apzīmējumu OK lai sāktu testu!");
     }
     public static void Jautajums1(){
+    	try {
         atbilde = Integer.parseInt(JOptionPane.showInputDialog("1. Jautājums\n Ar kuriem mainīgiem datu tipiem var veikt matemātiskās darbības?"
         		+ "\n 1. Int "
         		+ "\n 2. Char "
         		+ "\n 3. Double "
         		+ "\n 4. Boolean"));
+    }catch(Exception  e) {
+    	JOptionPane.showMessageDialog(null, "Ir notikusi kļūda!");
+    }
         if(atbilde == 13 || atbilde == 31) {
         	pareizi = pareizi + 1;
         	pareizi1 = true;
@@ -44,11 +49,15 @@ public class Tests {
         }
     }
     public static void Jautajums2(){
+    	try {
         atbilde = Integer.parseInt(JOptionPane.showInputDialog("2. Jautājums\n Kuras no šīm mainīgo datu tipiem varētu izmantot lai saglabātu kāda dzimšanas gadu?"
         		+ "\n 1. Byte "
         		+ "\n 2. Short "
         		+ "\n 3. Int "
         		+ "\n 4. Long"));
+        }catch(Exception  e) {
+        	JOptionPane.showMessageDialog(null, "Ir notikusi kļūda!");
+        }
         if(atbilde == 234 || atbilde == 243 || atbilde == 324 || atbilde == 342 || atbilde == 423 || atbilde == 432) {
         	pareizi = pareizi + 1;
         	pareizi2 = true;
@@ -56,11 +65,15 @@ public class Tests {
         }
     }
     public static void Jautajums3(){
+    	try {
         atbilde = Integer.parseInt(JOptionPane.showInputDialog("3. Jautājums\n Kurus no šīm mainīgiem datu tipiem varētu izmantot lai saglabātu decimāl skaitļus?"
         		+ "\n 1. Long "
         		+ "\n 2. Float "
         		+ "\n 3. Double "
         		+ "\n 4. Int"));
+        }catch(Exception  e) {
+        	JOptionPane.showMessageDialog(null, "Ir notikusi kļūda!");
+        }
         if(atbilde == 23 || atbilde == 32) {
         	pareizi = pareizi + 1;
         	pareizi3 = true;
@@ -68,11 +81,15 @@ public class Tests {
         }
     }
     public static void Jautajums4(){
+    	try {
         atbilde = Integer.parseInt(JOptionPane.showInputDialog("4. Jautājums\n Kuri no šīm mainīgiem ir definēti pareizi?"
         		+ "\n 1. double skaitlis; "
         		+ "\n 2. float 3skaitlis; " 
         		+ "\n 3. int skaitlis-15; "
         		+ "\n 4. char burts; "));
+        }catch(Exception  e) {
+        	JOptionPane.showMessageDialog(null, "Ir notikusi kļūda!");
+        }
         if(atbilde == 14 || atbilde == 41) {
         	pareizi = pareizi + 1;
         	pareizi4 = true;
@@ -80,11 +97,15 @@ public class Tests {
         }
     }
     public static void Jautajums5(){
+    	try {
         atbilde = Integer.parseInt(JOptionPane.showInputDialog("5. Jautājums\n Kuriem no šīm mainīgiem ir dotas nepareizas vērtības?"
         		+ "\n 1. char burts = 'a'; "
         		+ "\n 2. double x = 2.3;" 
         		+ "\n 3. boolean atbilde = patiess; "
         		+ "\n 4. int skaitlis = \"1\";"));
+        }catch(Exception  e) {
+        	JOptionPane.showMessageDialog(null, "Ir notikusi kļūda!");
+        }
         if(atbilde == 34 || atbilde == 43) {
         	pareizi = pareizi + 1;
         	pareizi5 = true;
@@ -92,11 +113,15 @@ public class Tests {
         }
     }
     public static void Jautajums6(){
+    	try {
         atbilde = Integer.parseInt(JOptionPane.showInputDialog("6. Jautājums\n Kuriem no šīm mainīgo datu tipiem izmantosi lai aprēķinātu trījstūra laukumu?"
         		+ "\n 1. Float "
         		+ "\n 2. Int " 
         		+ "\n 3. Double "
         		+ "\n 4. Long "));
+        }catch(Exception  e) {
+        	JOptionPane.showMessageDialog(null, "Ir notikusi kļūda!");
+        }
         if(atbilde == 13 || atbilde == 31) {
         	pareizi = pareizi + 1;
         	pareizi6 = true;
@@ -104,11 +129,15 @@ public class Tests {
         }
     }
     public static void Jautajums7(){
+    	try {
         atbilde = Integer.parseInt(JOptionPane.showInputDialog("7. Jautājums\n Kuriem no šīm mainīgo datu tipiem izmantosi lai saglabātu burtus?"
         		+ "\n 1. Byte "
         		+ "\n 2. Char " 
         		+ "\n 3. Boolean "
         		+ "\n 4. String "));
+        }catch(Exception  e) {
+        	JOptionPane.showMessageDialog(null, "Ir notikusi kļūda!");
+        }
         if(atbilde == 24 || atbilde == 42) {
         	pareizi = pareizi + 1;
         	pareizi7 = true;
@@ -116,11 +145,15 @@ public class Tests {
         }
     }
     public static void Jautajums8(){
+    	try {
         atbilde = Integer.parseInt(JOptionPane.showInputDialog("8. Jautājums\n Kuriem no šīm mainīgajiem aizņem 2 baitu atmiņas lai definētu?"
         		+ "\n 1. Short "
         		+ "\n 2. Char " 
         		+ "\n 3. Int "
         		+ "\n 4. Boolean "));
+        }catch(Exception  e) {
+        	JOptionPane.showMessageDialog(null, "Ir notikusi kļūda!");
+        }
         if(atbilde == 12 || atbilde == 21) {
         	pareizi = pareizi + 1;
         	pareizi8 = true;
@@ -128,11 +161,15 @@ public class Tests {
         }
     }
     public static void Jautajums9(){
+    	try {
         atbilde = Integer.parseInt(JOptionPane.showInputDialog("9. Jautājums\n Kuras no šīm vērtībām varētu dot būla tipa mainīgajam?"
         		+ "\n 1. TRUE "
         		+ "\n 2. false " 
         		+ "\n 3. nepatiess "
         		+ "\n 4. true "));
+        }catch(Exception  e) {
+        	JOptionPane.showMessageDialog(null, "Ir notikusi kļūda!");
+        }
         if(atbilde == 24 || atbilde == 42) {
         	pareizi = pareizi + 1;
         	pareizi9 = true;
@@ -140,11 +177,15 @@ public class Tests {
         }
     }
     public static void Jautajums10(){
+    	try {
         atbilde = Integer.parseInt(JOptionPane.showInputDialog("10. Jautājums\n Kuriem no šīm mainīgo datu tipiem sākuma vērtība ir 0"
         		+ "\n 1. Short "
         		+ "\n 2. Int " 
         		+ "\n 3. Long "
         		+ "\n 4. Float "));
+        }catch(Exception  e) {
+        	JOptionPane.showMessageDialog(null, "Ir notikusi kļūda!");
+        }
         if(atbilde == 123 || atbilde == 132 || atbilde == 213 || atbilde == 231 || atbilde == 321 || atbilde == 312) {
         	pareizi = pareizi + 1;
         	pareizi10 = true;
@@ -152,10 +193,9 @@ public class Tests {
         }
     }
     public static void rezultats(){
-
+    try {
     	 rezultats = JOptionPane.showInputDialog(null, "Apsveicu jūs abildējāt uz "+pareizi+" no 10 jautājumiem pareizi!\n"
-    			+ "\nPlusi ir pareizās atbildes!"
-    			+ "Jūs varat apskatīt jūsu rezultātus katrā jautājumā ierakstot tā atiecošā numuru:"
+    			+ "\nJūs varat apskatīt jūsu rezultātus katrā jautājumā ierakstot tā atiecošā numuru:"
     			+ "\n1. Jautājums" + atbilde1
     			+ "\n2. Jautājums" + atbilde2
     			+ "\n3. Jautājums" + atbilde3
@@ -166,7 +206,7 @@ public class Tests {
     			+ "\n8. Jautājums" + atbilde8
     			+ "\n9. Jautājums" + atbilde9
     			+ "\n10 Jautājums" + atbilde10
-    			+ "\n Q - lai beigtu testu!");
+    			+ "\nUzpiediet pogu \"OK\" lai beigtu testu!");
     	switch(rezultats) {
     	case "1" : atbilde1(); break;
     	case "2" : atbilde2(); break;
@@ -180,6 +220,9 @@ public class Tests {
     	case "10" : atbilde10(); break;
     	default : JOptionPane.showMessageDialog(null, "Uz redzēšanos!");
     	}
+    }catch(Exception  e) {
+    	JOptionPane.showMessageDialog(null, "Ir notikusi kļūda!");
+    }
     }
     public static void atbilde1() {
     	if(pareizi1 == true) {
@@ -284,7 +327,7 @@ public class Tests {
                 		+ "\n 1. char burts = 'a';  "
                 		+ "\n 2. double x = 2.3; " 
                 		+ "\n 3. boolean atbilde = patiess; +"
-                		+ "\\n 4. int skaitlis = \"1\"; +"
+                		+ "\n 4. int 1skaitlis = \"1\"; +"
     	        		+ "\nJūs atbildējot uz šo jautājumu nepareizi!"
     	        		+ "\nJo boolean tipa mainīgā vērtība ir jāraksta angliski kā true un int vērtība nevar būt teksts!"
     	        		+ "\nPunkti 0 / 1");
@@ -404,14 +447,23 @@ public class Tests {
 	public static void main(String[] args) {
 		pazinojums();
         Jautajums1();
+        atbilde = 0;
         Jautajums2();
+        atbilde = 0;
         Jautajums3();
+        atbilde = 0;
         Jautajums4();
+        atbilde = 0;
         Jautajums5();
+        atbilde = 0;
         Jautajums6();
+        atbilde = 0;
         Jautajums7();
+        atbilde = 0;
         Jautajums8();
+        atbilde = 0;
         Jautajums9();
+        atbilde = 0;
         Jautajums10();
         rezultats();
 	}
