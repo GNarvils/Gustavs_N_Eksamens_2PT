@@ -465,6 +465,7 @@ public class Tests {
         Jautajums9();
         atbilde = 0;
         Jautajums10();
+        atbilde = 0;
         rezultats();
 	}
 }

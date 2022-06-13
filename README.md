@@ -10,4 +10,4 @@ Eksāmena darbs par mainīgiem un to datu tipiem programmēšanas valodā Java, 
 - [x] Uzstaisīt elektronisko testu ar 10 jautājumiem par tēmu 
 - [x] Uzstaisīt testēšanas žurnālu
 - [x] Uzstaisīt 10 Black box testpiemērus
-- [ ] Uzstaisīt 10 White box testpiemērus
+- [x] Uzstaisīt 10 White box testpiemērus
