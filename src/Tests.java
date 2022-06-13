@@ -29,7 +29,7 @@ public class Tests {
     			+ "\nEsiet sveicināti elektroniskā testā, kurš pārbaudīs jūsu zināšanas par programmēšanas valodas Java mainīgajiem un to datu tipiem!"
     			+ "\nTestā visiem jautājumiem ir vairākas atbildes!"
     			+ "\nJa iesniegtu atbildi uz jautājuma, ierakstiet atbilžu varianta ciparus!"
-    			+ "\nPiemēram, ja atbilde uz jautājuma ir pirmais un otrais atbilžu variants, tad jūs rakstīsiet 12 vai 21"
+    			+ "\nPiemēram, ja atbilde uz jautājuma ir pirmais un otrais atbilžu variants, tad jūs rakstīsiet 12 vai 21!"
     			+ "\nSpiediet pogu ar apzīmējumu OK lai sāktu testu!");
     }
     public static void Jautajums1(){
@@ -50,7 +50,7 @@ public class Tests {
     }
     public static void Jautajums2(){
     	try {
-        atbilde = Integer.parseInt(JOptionPane.showInputDialog("2. Jautājums\n Kuras no šīm mainīgo datu tipiem varētu izmantot lai saglabātu kāda dzimšanas gadu?"
+        atbilde = Integer.parseInt(JOptionPane.showInputDialog("2. Jautājums\n Kuras no šiem mainīgo datu tipiem varētu izmantot, lai saglabātu kāda dzimšanas gadu?"
         		+ "\n 1. Byte "
         		+ "\n 2. Short "
         		+ "\n 3. Int "
@@ -66,7 +66,7 @@ public class Tests {
     }
     public static void Jautajums3(){
     	try {
-        atbilde = Integer.parseInt(JOptionPane.showInputDialog("3. Jautājums\n Kurus no šīm mainīgiem datu tipiem varētu izmantot lai saglabātu decimāl skaitļus?"
+        atbilde = Integer.parseInt(JOptionPane.showInputDialog("3. Jautājums\n Kurus no šiem mainīgiem datu tipiem varētu izmantot, lai saglabātu decimālskaitļus?"
         		+ "\n 1. Long "
         		+ "\n 2. Float "
         		+ "\n 3. Double "
@@ -82,7 +82,7 @@ public class Tests {
     }
     public static void Jautajums4(){
     	try {
-        atbilde = Integer.parseInt(JOptionPane.showInputDialog("4. Jautājums\n Kuri no šīm mainīgiem ir definēti pareizi?"
+        atbilde = Integer.parseInt(JOptionPane.showInputDialog("4. Jautājums\n Kuri no šiem mainīgiem ir definēti pareizi?"
         		+ "\n 1. double skaitlis; "
         		+ "\n 2. float 3skaitlis; " 
         		+ "\n 3. int skaitlis-15; "
@@ -98,7 +98,7 @@ public class Tests {
     }
     public static void Jautajums5(){
     	try {
-        atbilde = Integer.parseInt(JOptionPane.showInputDialog("5. Jautājums\n Kuriem no šīm mainīgiem ir dotas nepareizas vērtības?"
+        atbilde = Integer.parseInt(JOptionPane.showInputDialog("5. Jautājums\n Kuriem no šiem mainīgiem ir dotas nepareizas vērtības?"
         		+ "\n 1. char burts = 'a'; "
         		+ "\n 2. double x = 2.3;" 
         		+ "\n 3. boolean atbilde = patiess; "
@@ -114,7 +114,7 @@ public class Tests {
     }
     public static void Jautajums6(){
     	try {
-        atbilde = Integer.parseInt(JOptionPane.showInputDialog("6. Jautājums\n Kuriem no šīm mainīgo datu tipiem izmantosi lai aprēķinātu trījstūra laukumu?"
+        atbilde = Integer.parseInt(JOptionPane.showInputDialog("6. Jautājums\n Kuriem no šiem mainīgo datu tipiem izmantosi, lai aprēķinātu trījstūra laukumu?"
         		+ "\n 1. Float "
         		+ "\n 2. Int " 
         		+ "\n 3. Double "
@@ -130,7 +130,7 @@ public class Tests {
     }
     public static void Jautajums7(){
     	try {
-        atbilde = Integer.parseInt(JOptionPane.showInputDialog("7. Jautājums\n Kuriem no šīm mainīgo datu tipiem izmantosi lai saglabātu burtus?"
+        atbilde = Integer.parseInt(JOptionPane.showInputDialog("7. Jautājums\n Kuriem no šiem mainīgo datu tipiem izmantosi, lai saglabātu burtus?"
         		+ "\n 1. Byte "
         		+ "\n 2. Char " 
         		+ "\n 3. Boolean "
@@ -146,7 +146,7 @@ public class Tests {
     }
     public static void Jautajums8(){
     	try {
-        atbilde = Integer.parseInt(JOptionPane.showInputDialog("8. Jautājums\n Kuriem no šīm mainīgajiem aizņem 2 baitu atmiņas lai definētu?"
+        atbilde = Integer.parseInt(JOptionPane.showInputDialog("8. Jautājums\n Kuri no šiem mainīgajiem aizņem 2 baitu atmiņas lai definētu?"
         		+ "\n 1. Short "
         		+ "\n 2. Char " 
         		+ "\n 3. Int "
@@ -178,7 +178,7 @@ public class Tests {
     }
     public static void Jautajums10(){
     	try {
-        atbilde = Integer.parseInt(JOptionPane.showInputDialog("10. Jautājums\n Kuriem no šīm mainīgo datu tipiem sākuma vērtība ir 0"
+        atbilde = Integer.parseInt(JOptionPane.showInputDialog("10. Jautājums\n Kuriem no šiem mainīgo datu tipiem sākuma vērtība ir 0?"
         		+ "\n 1. Short "
         		+ "\n 2. Int " 
         		+ "\n 3. Long "
@@ -248,7 +248,7 @@ public class Tests {
     }
     public static void atbilde2() {
     	if(pareizi2 == true) {
-    		JOptionPane.showMessageDialog(null, "2. Jautājums\n Kuras no šīm mainīgo datu tipiem varētu izmantot lai saglabātu kāda dzimšanas gadu?"
+    		JOptionPane.showMessageDialog(null, "2. Jautājums\n Kuras no šiem mainīgo datu tipiem varētu izmantot, lai saglabātu kāda dzimšanas gadu?"
             		+ "\n 1. Byte "
             		+ "\n 2. Short + "
             		+ "\n 3. Int + "
@@ -257,7 +257,7 @@ public class Tests {
 	        		+ "\nPunkti: 1 / 1");
     		   rezultats();
     	}else {
-    		JOptionPane.showMessageDialog(null, "2. Jautājums\n Kuras no šīm mainīgo datu tipiem varētu izmantot lai saglabātu kāda dzimšanas gadu?"
+    		JOptionPane.showMessageDialog(null, "2. Jautājums\n Kuras no šiem mainīgo datu tipiem varētu izmantot, lai saglabātu kāda dzimšanas gadu?"
             		+ "\n 1. Byte "
             		+ "\n 2. Short + "
             		+ "\n 3. Int + "
@@ -270,7 +270,7 @@ public class Tests {
     }
         public static void atbilde3() {
         	if(pareizi3 == true) {
-        		JOptionPane.showMessageDialog(null,"3. Jautājums\n Kurus no šīm mainīgiem datu tipiem varētu izmantot lai saglabātu decimāl skaitļus?"
+        		JOptionPane.showMessageDialog(null,"3. Jautājums\n Kurus no šiem mainīgiem datu tipiem varētu izmantot, lai saglabātu decimālskaitļus?"
                 		+ "\n 1. Long "
                 		+ "\n 2. Float + "
                 		+ "\n 3. Double + "
@@ -279,7 +279,7 @@ public class Tests {
                 		+ "\nPunkti: 1 / 1");
         		   rezultats();
         	}else {
-        		JOptionPane.showMessageDialog(null,"3. Jautājums\n Kurus no šīm mainīgiem datu tipiem varētu izmantot lai saglabātu decimāl skaitļus?"
+        		JOptionPane.showMessageDialog(null,"3. Jautājums\n Kurus no šiem mainīgiem datu tipiem varētu izmantot, lai saglabātu decimālskaitļus?"
                 		+ "\n 1. Long "
                 		+ "\n 2. Float + "
                 		+ "\n 3. Double + "
@@ -292,7 +292,7 @@ public class Tests {
     }
         public static void atbilde4() {
         	if(pareizi4 == true) {
-        		JOptionPane.showMessageDialog(null,"4. Jautājums\n Kuri no šīm mainīgiem ir definēti pareizi?"
+        		JOptionPane.showMessageDialog(null,"4. Jautājums\n Kuri no šiem mainīgiem ir definēti pareizi?"
                 		+ "\n 1. double skaitlis; + "
                 		+ "\n 2. float 3skaitlis; " 
                 		+ "\n 3. int skaitlis-15; "
@@ -301,7 +301,7 @@ public class Tests {
                 		+ "\nPunkti: 1 / 1");
         		   rezultats();
         	}else {
-        		JOptionPane.showMessageDialog(null,"4. Jautājums\n Kuri no šīm mainīgiem ir definēti pareizi?"
+        		JOptionPane.showMessageDialog(null,"4. Jautājums\n Kuri no šiem mainīgiem ir definēti pareizi?"
                 		+ "\n 1. double skaitlis; + "
                 		+ "\n 2. float 3skaitlis; " 
                 		+ "\n 3. int skaitlis-15; "
@@ -314,7 +314,7 @@ public class Tests {
     }
         public static void atbilde5() {
         	if(pareizi5 == true) {
-        		JOptionPane.showMessageDialog(null,"5. Jautājums\n Kuriem no šīm mainīgiem ir dotas nepareizas vērtības?"
+        		JOptionPane.showMessageDialog(null,"5. Jautājums\n Kuriem no šiem mainīgiem ir dotas nepareizas vērtības?"
                 		+ "\n 1. char burts = 'a';  "
                 		+ "\n 2. double x = 2.3; " 
                 		+ "\n 3. boolean atbilde = patiess; +"
@@ -323,7 +323,7 @@ public class Tests {
                 		+ "\nPunkti: 1 / 1");
         		   rezultats();
         	}else {
-        		JOptionPane.showMessageDialog(null,"5. Jautājums\n Kuriem no šīm mainīgiem ir dotas nepareizas vērtības?"
+        		JOptionPane.showMessageDialog(null,"5. Jautājums\n Kuriem no šiem mainīgiem ir dotas nepareizas vērtības?"
                 		+ "\n 1. char burts = 'a';  "
                 		+ "\n 2. double x = 2.3; " 
                 		+ "\n 3. boolean atbilde = patiess; +"
@@ -336,7 +336,7 @@ public class Tests {
     }
         public static void atbilde6() {
         	if(pareizi6 == true) {
-        		JOptionPane.showMessageDialog(null,"6. Jautājums\n Kuriem no šīm mainīgo datu tipiem izmantosi lai aprēķinātu trījstūra laukumu?"
+        		JOptionPane.showMessageDialog(null,"6. Jautājums\n Kuriem no šiem mainīgo datu tipiem izmantosi, lai aprēķinātu trījstūra laukumu?"
                 		+ "\n 1. Float + "
                 		+ "\n 2. Int " 
                 		+ "\n 3. Double + "
@@ -345,7 +345,7 @@ public class Tests {
                 		+ "\nPunkti: 1 / 1");
         		   rezultats();
         	}else {
-        		JOptionPane.showMessageDialog(null,"6. Jautājums\n Kuriem no šīm mainīgo datu tipiem izmantosi lai aprēķinātu trījstūra laukumu?"
+        		JOptionPane.showMessageDialog(null,"6. Jautājums\n Kuriem no šiem mainīgo datu tipiem izmantosi, lai aprēķinātu trījstūra laukumu?"
                 		+ "\n 1. Float + "
                 		+ "\n 2. Int " 
                 		+ "\n 3. Double + "
@@ -358,7 +358,7 @@ public class Tests {
     }
         public static void atbilde7() {
         	if(pareizi7 == true) {
-        		JOptionPane.showMessageDialog(null,"7. Jautājums\n Kuriem no šīm mainīgo datu tipiem izmantosi lai saglabātu burtus?"
+        		JOptionPane.showMessageDialog(null,"7. Jautājums\n Kuriem no šiem mainīgo datu tipiem izmantosi, lai saglabātu burtus?"
                 		+ "\n 1. Byte "
                 		+ "\n 2. Char +" 
                 		+ "\n 3. Boolean "
@@ -367,7 +367,7 @@ public class Tests {
                 		+ "\nPunkti: 1 / 1");
         		   rezultats();
         	}else {
-        		JOptionPane.showMessageDialog(null,"7. Jautājums\n Kuriem no šīm mainīgo datu tipiem izmantosi lai saglabātu burtus?"
+        		JOptionPane.showMessageDialog(null,"7. Jautājums\n Kuriem no šiem mainīgo datu tipiem izmantosi, lai saglabātu burtus?"
                 		+ "\n 1. Byte "
                 		+ "\n 2. Char +" 
                 		+ "\n 3. Boolean "
@@ -380,7 +380,7 @@ public class Tests {
     }
         public static void atbilde8() {
         	if(pareizi8 == true) {
-        		JOptionPane.showMessageDialog(null,"8. Jautājums\n Kuriem no šīm mainīgajiem aizņem 2 baitu atmiņas lai definētu?"
+        		JOptionPane.showMessageDialog(null,"8. Jautājums\n Kuri no šiem mainīgajiem aizņem 2 baitu atmiņas lai definētu?"
                 		+ "\n 1. Short + "
                 		+ "\n 2. Char + " 
                 		+ "\n 3. Int "
@@ -389,7 +389,7 @@ public class Tests {
                 		+ "\nPunkti: 1 / 1");
         		   rezultats();
         	}else {
-        		JOptionPane.showMessageDialog(null,"8. Jautājums\n Kuriem no šīm mainīgajiem aizņem 2 baitu atmiņas lai definētu?"
+        		JOptionPane.showMessageDialog(null,"8. Jautājums\n Kuri no šiem mainīgajiem aizņem 2 baitu atmiņas lai definētu?"
                 		+ "\n 1. Short + "
                 		+ "\n 2. Char + " 
                 		+ "\n 3. Int "
@@ -424,7 +424,7 @@ public class Tests {
     }
         public static void atbilde10() {
         	if(pareizi10 == true) {
-        		JOptionPane.showMessageDialog(null,"10. Jautājums\n Kuriem no šīm mainīgo datu tipiem sākuma vērtība ir 0"
+        		JOptionPane.showMessageDialog(null,"10. Jautājums\n Kuriem no šiem mainīgo datu tipiem sākuma vērtība ir 0?"
                 		+ "\n 1. Short +"
                 		+ "\n 2. Int + " 
                 		+ "\n 3. Long + "
@@ -433,7 +433,7 @@ public class Tests {
                 		+ "\nPunkti: 1 / 1");
         		   rezultats();
         	}else {
-        		JOptionPane.showMessageDialog(null,"10. Jautājums\n Kuriem no šīm mainīgo datu tipiem sākuma vērtība ir 0"
+        		JOptionPane.showMessageDialog(null,"10. Jautājums\n Kuriem no šiem mainīgo datu tipiem sākuma vērtība ir 0?"
                 		+ "\n 1. Short +"
                 		+ "\n 2. Int + " 
                 		+ "\n 3. Long + "
